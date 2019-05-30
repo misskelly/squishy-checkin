@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { getCatGif } from '../../utils/fetchCalls/getCatGif';
-import { fetchAnything } from '../../utils/fetchCalls/fetchAnything.js';
+import { fetchCatGif } from '../../utils/fetchCalls/fetchCatGif';
+import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke.js';
 
 
 class App extends Component {  
 
 
   componentDidMount() {
-    getCatGif()
+    fetchCatGif()
       .then(result => console.log(result[0].url));
 
-    fetchAnything('https://icanhazdadjoke.com/')
+    fetchDadJoke('https://icanhazdadjoke.com/')
       .then(result => console.log('joke', result));
   }
 

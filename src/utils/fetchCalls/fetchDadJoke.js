@@ -1,6 +1,6 @@
 
 
-export const fetchAnything = async (url) => {
+export const fetchDadJoke = async (url) => {
   const response = await fetch(url, {
     headers: {
       Accept: 'application/json'
