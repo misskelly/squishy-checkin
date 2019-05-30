@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { fetchCatGif } from '../../utils/fetchCalls/fetchCatGif';
-import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke.js';
+import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke';
 
 
 class App extends Component {  
