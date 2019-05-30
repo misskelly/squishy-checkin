@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import logo from './logo.svg';
 import './App.css';
-import { getCatGif } from './utils/fetchCalls/getCatGif';
+import { getCatGif } from '../../utils/fetchCalls/getCatGif';
 
 
 class App extends Component {  
