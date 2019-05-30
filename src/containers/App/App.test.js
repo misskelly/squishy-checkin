@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import ReactDOM from './node_modules/react-dom';
 import App from './App';
 
