@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
 import { fetchCatGif } from '../../utils/fetchCalls/fetchCatGif';
-import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke.js';
+import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke';
 
 
-class App extends Component {  
-
-
+class App extends Component {
   componentDidMount() {
+    fetchDadJoke()
+      .then(result => console.log(result));
     fetchCatGif()
-      .then(result => console.log(result[0].url));
-
-    fetchDadJoke('https://icanhazdadjoke.com/')
-      .then(result => console.log('joke', result));
+      .then(result => console.log(result));
   }
-
-
 
   render() {
     return (
-      <div className="App">
-
-    </div>
-  );
-}
+      <div className="App" />
+    );
+  }
 }
 
 export default App;
