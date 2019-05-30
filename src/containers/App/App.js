@@ -1,7 +1,6 @@
-import React, { Component } from './node_modules/react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 import { getCatGif } from '../../utils/fetchCalls/getCatGif';
+import { fetchAnything } from '../../utils/fetchCalls/fetchAnything.js';
 
 
 class App extends Component {  
@@ -9,26 +8,18 @@ class App extends Component {
 
   componentDidMount() {
     getCatGif()
-      .then(result => console.log(result[0].url)) 
+      .then(result => console.log(result[0].url));
+
+    fetchAnything('https://icanhazdadjoke.com/')
+      .then(result => console.log('joke', result));
   }
+
+
 
   render() {
     return (
       <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
