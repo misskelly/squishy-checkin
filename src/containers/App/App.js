@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
 import { fetchCatGif } from '../../utils/fetchCalls/fetchCatGif';
 import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke';
 
@@ -13,9 +16,19 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" />
+      <div className="App">
+      </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  isLoading: state.isLoading,
+  error: state.error,
+});
+
+// const mapDispatchToProps = (dispatch) => ({
+
+// })
+
+export default connect(mapStateToProps)(App);

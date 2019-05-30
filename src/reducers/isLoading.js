@@ -1,10 +1,10 @@
 const isLoading = (state = false, action) => {
   switch (action.type) {
     case 'IS_LOADING':
-      return action.isLoading
+      return action.isLoading;
     default:
-      return state
+      return state;
   }
 }
 
-export default isLoading
+export default isLoading;
