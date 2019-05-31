@@ -9,14 +9,16 @@ import Home from '../../components/Home'
 import HelperPage from '../HelperPage';
 import { fetchCatGif } from '../../utils/fetchCalls/fetchCatGif';
 import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke';
+import { getCat } from '../../thunks/getCat';
 
 
 class App extends Component {
   componentDidMount() {
-    fetchDadJoke()
-      .then(result => console.log(result));
-    fetchCatGif()
-      .then(result => console.log(result));
+    this.props.getCat();
+    // fetchDadJoke()
+    //   .then(result => console.log(result));
+  fetchCatGif()
+    .then(result => console.log(result));
   }
 
   render() {
@@ -37,14 +39,15 @@ class App extends Component {
 const mapStateToProps = state => ({
   isLoading: state.isLoading,
   error: state.error,
+  cat: state.cat
 });
 
-// const mapDispatchToProps = (dispatch) => ({
-
-// })
+const mapDispatchToProps = (dispatch) => ({
+  getCat: () => dispatch(getCat())
+});
 
 // App.propTypes = {
 
 // }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

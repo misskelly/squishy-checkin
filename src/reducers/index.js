@@ -7,7 +7,7 @@ import cat from './cat';
 const rootReducer = combineReducers({
   isLoading,
   hasErrored,
-  cat
+  cat,
 });
 
 export default rootReducer;

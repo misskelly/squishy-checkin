@@ -11,4 +11,4 @@ export const hasErrored = message => ({
 export const setCat = cat => ({
   type: 'SET_CAT',
   cat
-})
+});
