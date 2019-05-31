@@ -1,5 +1,6 @@
-import { isLoading, hasErrored, setCat } from '../actions';
+import { isLoading, hasErrored, cat } from '../actions';
 
 export const getCat = () => {
-  return async (dispatch)
+  console.log('get cat')
+  // return async (dispatch)
 }
