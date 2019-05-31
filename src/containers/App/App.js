@@ -5,30 +5,26 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import ErrorPage from '../../components/ErrorPage';
-import Home from '../../components/Home'
+import Home from '../../components/Home';
 import HelperPage from '../HelperPage';
-import { fetchCatGif } from '../../utils/fetchCalls/fetchCatGif';
-import { fetchDadJoke } from '../../utils/fetchCalls/fetchDadJoke';
+import { getHelpers } from '../../thunks/getHelpers';
 
 
 class App extends Component {
   componentDidMount() {
-    fetchDadJoke()
-      .then(result => console.log(result));
-    fetchCatGif()
-      .then(result => console.log(result));
+    this.props.getHelpers();
   }
 
   render() {
     return (
       <div className='App'>
-      <Switch>
-        <Route exact path='/' component={ Home } />
-        <Route path='/cats' component={ HelperPage } />
-        <Route path='/jokes' component={ HelperPage } />
-        <Route path='/everythingisawful' component={ HelperPage } />
-        <Route path='/error' component={ ErrorPage } /> 
-      </Switch>
+        <Switch>
+          <Route exact path='/' component={ Home } />
+          <Route path='/cats' component={ HelperPage } />
+          <Route path='/jokes' component={ HelperPage } />
+          <Route path='/everythingisawful' component={ HelperPage } />
+          <Route path='/error' component={ ErrorPage } /> 
+        </Switch>
       </div>
     );
   }
@@ -37,14 +33,15 @@ class App extends Component {
 const mapStateToProps = state => ({
   isLoading: state.isLoading,
   error: state.error,
+  cat: state.cat
 });
 
-// const mapDispatchToProps = (dispatch) => ({
-
-// })
+const mapDispatchToProps = (dispatch) => ({
+  getHelpers: () => dispatch(getHelpers())
+});
 
 // App.propTypes = {
 
 // }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

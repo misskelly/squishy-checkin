@@ -11,4 +11,10 @@ export const hasErrored = message => ({
 export const setCat = cat => ({
   type: 'SET_CAT',
   cat
-})
+});
+
+export const setJoke = joke => ({
+  type: 'SET_JOKE',
+  joke
+});
+

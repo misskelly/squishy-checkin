@@ -1,7 +1,7 @@
 const cat = (state = '', action) => {
-  switch(action.type) {
+  switch (action.type) {
   case 'SET_CAT':
-    return action.cat;
+    return action.cat[0].url;
   default:
     return state;
   }

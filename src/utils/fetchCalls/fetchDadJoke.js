@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-export const fetchDadJoke = async () => {
+const fetchDadJoke = async () => {
   const url = 'https://icanhazdadjoke.com/'
   const response = await fetch(url, {
     headers: {
@@ -12,3 +12,5 @@ export const fetchDadJoke = async () => {
   }
   return response.json();
 };
+
+export default fetchDadJoke;
