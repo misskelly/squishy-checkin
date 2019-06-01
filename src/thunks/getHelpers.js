@@ -12,9 +12,11 @@ export const getHelpers = () => {
       dispatch(setJoke(joke));
       dispatch(isLoading(false));
     } catch(error) {
+      console.log(error) 
       dispatch(hasErrored('Cats do not like fetch either.'));
       dispatch(isLoading(false));
     }
   };
 };
 
+export default getHelpers;

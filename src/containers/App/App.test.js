@@ -1,9 +1,21 @@
 import React from 'react';
-import ReactDOM from './node_modules/react-dom';
-import App from './App';
+import { shallow }from 'enzyme';
+import { App, mapStateToProps, mapDispatchToProps } from './App';
+import { getHelpers } from '../../thunks/getHelpers';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+jest.mock('../../thunks/getHelpers')
+
+describe('App', () => {
+  let wrapper;
+  let mockGetHelpers;
+
+  beforeEach(() => {
+    mockGetHelpers = jest.fn();
+    wrapper = shallow(<App getHelpers={mockGetHelpers}/>); 
+  });
+  
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
 });

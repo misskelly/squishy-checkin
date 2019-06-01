@@ -10,9 +10,12 @@ import HelperPage from '../HelperPage';
 import { getHelpers } from '../../thunks/getHelpers';
 
 
-class App extends Component {
+export class App extends Component {
+  
   componentDidMount() {
     this.props.getHelpers();
+    console.log('app props: ', this.props);
+    console.log('app state: ', this.state);
   }
 
   render() {
@@ -30,13 +33,12 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   isLoading: state.isLoading,
-  error: state.error,
-  cat: state.cat
+  error: state.error
 });
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   getHelpers: () => dispatch(getHelpers())
 });
 
