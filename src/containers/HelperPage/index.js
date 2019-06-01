@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
+import { getHelpers } from '../../thunks/getHelpers';
 
 export class HelperPage extends Component {
   
   componentDidMount() {
-    console.log(this.props)
+    // console.log(this.props);
+    // console.log(this.state);
   }
   
   render() {
@@ -22,7 +23,6 @@ export class HelperPage extends Component {
         {path === '/jokes' && 
         <h4>{this.props.joke}</h4>
         }
-      
 
       </section>
     )
@@ -36,8 +36,10 @@ const mapStateToProps = state => ({
   hasErrored: state.hasErrored
 })
 
-// const mapDispatchToProps = {
-// }
+const mapDispatchToProps = {
+  getHelpers: () => dispatchEvent(getHelpers())
+}
 
 
-export default connect(mapStateToProps)(HelperPage)
+
+export default connect(mapStateToProps, mapDispatchToProps)(HelperPage);

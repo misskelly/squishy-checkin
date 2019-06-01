@@ -1,5 +1,5 @@
 /* eslint-disable max-lines-per-function */
-import { fetchDadJoke } from './fetchDadJoke';
+import fetchDadJoke from './fetchDadJoke';
 
 describe('fetchDadJoke', () => {
   const mockUrl = 'https://icanhazdadjoke.com/';
