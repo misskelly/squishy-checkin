@@ -1,15 +1,15 @@
 import { combineReducers } from 'redux';
-import hasErrored from './hasErrored';
-import isLoading from './isLoading';
-import cat from './cat';
+import errorMessage from './errorMessage';
+import { toggleIsLoading } from './toggleIsLoading';
+import { cat } from './cat';
 import joke from './joke';
 
 
-const rootReducer = combineReducers({
-  isLoading,
-  hasErrored,
+export const rootReducer = combineReducers({
+  toggleIsLoading,
+  errorMessage,
   cat,
-  joke
+  joke,
 });
 
 export default rootReducer;
