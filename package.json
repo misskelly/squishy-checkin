@@ -21,6 +21,12 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js --ignore-pattern node_modules/ --ignore-pattern src/serviceWorker.js"
   },
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-react": "^7.13.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -38,10 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.2",
-    "eslint-config-airbnb": "^17.1.0"
   }
 }
