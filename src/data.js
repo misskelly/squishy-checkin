@@ -1,249 +1,269 @@
-  "keywords": [{
-      "word": "angry",
-      "score": -0.99774768
-    },
-    {
-      "word": "helpless",
-      "score": -0.927722669
-    },
-    {
-      "word": "confused",
-      "score": -0.87239247
-    },
-    {
-      "word": "depressed",
-      "score": -0.569059516
-    },
-    {
-      "word": "ashamed",
-      "score": -0.99229996
-    },
-    {
-      "word": "incapable",
-      "score": -0.990422871
-    },
-    {
-      "word": "useless",
-      "score": -0.982204379
-    },
-    {
-      "word": "hostile",
-      "score": -0.976950115
-    },
-    {
-      "word": "sore",
-      "score": -0.953901729
-    },
-    {
-      "word": "paralyzed",
-      "score": -0.943805224
-    },
-    {
-      "word": "powerless",
-      "score": -0.927722669
-    },
-    {
-      "word": "doubtful",
-      "score": -0.885323353
-    },
-    {
-      "word": "irritated",
-      "score": -0.666762836
-    },
-    {
-      "word": "uncertain",
-      "score": -0.655003794
-    },
-    {
-      "word": "empty",
-      "score": 0.10025308
-    },
-    {
-      "word": "shy",
-      "score": 0.10025308
-    },
-    {
-      "word": "guilty",
-      "score": -0.990827456
-    },
-    {
-      "word": "inferior",
-      "score": -0.985440912
-    },
-    {
-      "word": "dissatisfied",
-      "score": -0.982204379
-    },
-    {
-      "word": "bitter",
-      "score": -0.966661604
-    },
-    {
-      "word": "miserable",
-      "score": -0.956923508
-    },
-    {
-      "word": "unpleasant",
-      "score": -0.943805224
-    },
-    {
-      "word": "detestable",
-      "score": -0.82767436
-    },
-    {
-      "word": "repugnant",
-      "score": -0.82767436
-    },
-    {
-      "word": "despair",
-      "score": -0.81934939
-    },
-    {
-      "word": "upset",
-      "score": -0.569059516
-    },
-    {
-      "word": "dominated",
-      "score": 0.467771937
-    }, {
-      "word": "up",
-      "score": 0.14001818
-    }, {
-      "word": "despair",
-      "score": -1.63869878
-    }, {
-      "word": "terrible",
-      "score": -0.994119085
-    }, {
-      "word": "bad",
-      "score": -0.992633864
-    }, {
-      "word": "inflame",
-      "score": -0.976656255
-    }, {
-      "word": "bitter",
-      "score": -0.966661604
-    }, {
-      "word": "tragic",
-      "score": -0.947348426
-    }, {
-      "word": "pessimistic",
-      "score": -0.927722669
-    }, {
-      "word": "resentful",
-      "score": -0.927722669
-    }, {
-      "word": "uneasy",
-      "score": -0.927722669
-    }, {
-      "word": "pathetic",
-      "score": -0.927722669
-    },
-    {
-      "word": "shy",
-      "score": 0.10025308
-    }, {
-      "word": "empty",
-      "score": 0.10025308
-    }, {
-      "word": "dissatisfied",
-      "score": -0.982204379
-    }, {
-      "word": "miserable",
-      "score": -0.956923508
-    }, {
-      "word": "unpleasant",
-      "score": -0.943805224
-    }, {
-      "word": "hateful",
-      "score": -0.535525191
-    }, {
-      "word": "forced",
-      "score": -0.063166792
-    },
-    {
-      "word": "loss",
-      "score": -0.990827456
-    }, {
-      "word": "tense",
-      "score": -0.947348426
-    }, {
-      "word": "boiling",
-      "score": -0.618859212
-    }, {
-      "word": "indignant",
-      "score": -0.569059516
-    }, {
-      "word": "fume",
-      "score": -0.428807657
-    }
-  ]
+  // "keywords": [{
+  //     "word": "angry",
+  //     "score": -0.99774768
+  //   },
+  //   {
+  //     "word": "helpless",
+  //     "score": -0.927722669
+  //   },
+  //   {
+  //     "word": "confused",
+  //     "score": -0.87239247
+  //   },
+  //   {
+  //     "word": "depressed",
+  //     "score": -0.569059516
+  //   },
+  //   {
+  //     "word": "ashamed",
+  //     "score": -0.99229996
+  //   },
+  //   {
+  //     "word": "incapable",
+  //     "score": -0.990422871
+  //   },
+  //   {
+  //     "word": "useless",
+  //     "score": -0.982204379
+  //   },
+  //   {
+  //     "word": "hostile",
+  //     "score": -0.976950115
+  //   },
+  //   {
+  //     "word": "sore",
+  //     "score": -0.953901729
+  //   },
+  //   {
+  //     "word": "paralyzed",
+  //     "score": -0.943805224
+  //   },
+  //   {
+  //     "word": "powerless",
+  //     "score": -0.927722669
+  //   },
+  //   {
+  //     "word": "doubtful",
+  //     "score": -0.885323353
+  //   },
+  //   {
+  //     "word": "irritated",
+  //     "score": -0.666762836
+  //   },
+  //   {
+  //     "word": "uncertain",
+  //     "score": -0.655003794
+  //   },
+  //   {
+  //     "word": "empty",
+  //     "score": 0.10025308
+  //   },
+  //   {
+  //     "word": "shy",
+  //     "score": 0.10025308
+  //   },
+  //   {
+  //     "word": "guilty",
+  //     "score": -0.990827456
+  //   },
+  //   {
+  //     "word": "inferior",
+  //     "score": -0.985440912
+  //   },
+  //   {
+  //     "word": "dissatisfied",
+  //     "score": -0.982204379
+  //   },
+  //   {
+  //     "word": "bitter",
+  //     "score": -0.966661604
+  //   },
+  //   {
+  //     "word": "miserable",
+  //     "score": -0.956923508
+  //   },
+  //   {
+  //     "word": "unpleasant",
+  //     "score": -0.943805224
+  //   },
+  //   {
+  //     "word": "detestable",
+  //     "score": -0.82767436
+  //   },
+  //   {
+  //     "word": "repugnant",
+  //     "score": -0.82767436
+  //   },
+  //   {
+  //     "word": "despair",
+  //     "score": -0.81934939
+  //   },
+  //   {
+  //     "word": "upset",
+  //     "score": -0.569059516
+  //   },
+  //   {
+  //     "word": "dominated",
+  //     "score": 0.467771937
+  //   }, {
+  //     "word": "up",
+  //     "score": 0.14001818
+  //   }, {
+  //     "word": "despair",
+  //     "score": -1.63869878
+  //   }, {
+  //     "word": "terrible",
+  //     "score": -0.994119085
+  //   }, {
+  //     "word": "bad",
+  //     "score": -0.992633864
+  //   }, {
+  //     "word": "inflame",
+  //     "score": -0.976656255
+  //   }, {
+  //     "word": "bitter",
+  //     "score": -0.966661604
+  //   }, {
+  //     "word": "tragic",
+  //     "score": -0.947348426
+  //   }, {
+  //     "word": "pessimistic",
+  //     "score": -0.927722669
+  //   }, {
+  //     "word": "resentful",
+  //     "score": -0.927722669
+  //   }, {
+  //     "word": "uneasy",
+  //     "score": -0.927722669
+  //   }, {
+  //     "word": "pathetic",
+  //     "score": -0.927722669
+  //   },
+  //   {
+  //     "word": "shy",
+  //     "score": 0.10025308
+  //   }, {
+  //     "word": "empty",
+  //     "score": 0.10025308
+  //   }, {
+  //     "word": "dissatisfied",
+  //     "score": -0.982204379
+  //   }, {
+  //     "word": "miserable",
+  //     "score": -0.956923508
+  //   }, {
+  //     "word": "unpleasant",
+  //     "score": -0.943805224
+  //   }, {
+  //     "word": "hateful",
+  //     "score": -0.535525191
+  //   }, {
+  //     "word": "forced",
+  //     "score": -0.063166792
+  //   },
+  //   {
+  //     "word": "loss",
+  //     "score": -0.990827456
+  //   }, {
+  //     "word": "tense",
+  //     "score": -0.947348426
+  //   }, {
+  //     "word": "boiling",
+  //     "score": -0.618859212
+  //   }, {
+  //     "word": "indignant",
+  //     "score": -0.569059516
+  //   }, {
+  //     "word": "fume",
+  //     "score": -0.428807657
+  //   }
+  // ]
 
 
 
 
+export const crisisQuestions = [
+  {
+  "question": "Are you hydrated?",
+  "answer": "If not, have a glass of water."
+  },
+  {
+  "question": "Have you eaten in the past three hours?",
+  "answer": "If not, get some food — something with protein, not just simple carbs.  Perhaps some nuts or hummus?"
+  
+  },
+  {
+  "question": "Have you showered in the past couple of days?",
+  "answer": "If not, take a shower right now."
+  },
+  {
+  "question": "If daytime: are you dressed?",
+  "answer": "If not, put on clean clothes that aren’t pajamas.  Give yourself permission to wear something special, whether it’s a funny t-shirt or a pretty dress."
+  },
+  {
+  "question": "If nighttime: are you sleepy and fatigued but resisting going to sleep?",
+  "answer": "If so, put on pajamas, make yourself cozy in bed with a teddy bear and the sound of falling rain, and close your eyes for fifteen minutes — no electronic screens allowed.  If you’re still awake after that, you can get up again; no pressure."
+  },
+  {
+  "question": "Have you stretched your legs in the past day?",
+  "answer": "If not, do so right now.  If you don’t have the spoons for a run or trip to the gym, just walk around the block, then keep walking as long as you please.  If the weather’s crap, drive to a big box store (e.g. Target) and go on a brisk walk through the aisles you normally skip."
+  },
+  {
+  "question": "Have you said something nice to someone in the past day?",
+  "answer": "Do so, whether online or in person.  Make it genuine; wait until you see something really wonderful about someone, and tell them about it."
+  },
+  {
+  "question": "Have you moved your body to music in the past day?",
+  "answer": "If not, do so — jog for the length of an EDM song at your favorite BPM, or just dance around the room for the length of an upbeat song."
+  },
+  {
+  "question": "Have you cuddled a living being in the past two days?",
+  "answer": "If not, do so.  Don’t be afraid to ask for hugs from friends or friends’ pets.  Most of them will enjoy the cuddles too; you’re not imposing on them."
+  },
+  {
+  "question": "Do you feel ineffective?",
+  "answer": "Pause right now and get something small completed, whether it’s responding to an e-mail, loading up the dishwasher, or packing your gym bag for your next trip.  Good job!"
+  },
+  {
+  "question": "Do you feel unattractive?",
+  "answer": "Take a goddamn selfie.  Your friends will remind you how great you look, and you’ll fight society’s restrictions on what beauty can look like."
+  },
+  {
+  "question": "Do you feel overwhelmed and/or paralyzed by indecision?",
+  "answer": "Give yourself ten minutes to sit back and figure out a game plan for the day.  If a particular decision or problem is still being a roadblock, simply set it aside for now, and pick something else that seems doable.  Right now, the important part is to break through that stasis, even if it means doing something trivial."
+  },
+  {
+  "question": "Have you seen a therapist in the past few days?",
+  "answer": "If not, hang on until your next therapy visit and talk through things then."
+  },
+  {
+  "question": "Have you been over-exerting yourself lately — physically, emotionally, socially, or intellectually?",
+  "answer": "That can take a toll that lingers for days. Give yourself a break in that area, whether it’s physical rest, taking time alone, or relaxing with some silly entertainment."
+  },
+  {
+  "question": "Have you changed any of your medications in the past couple of weeks, including skipped doses or change in generic prescription brand?",
+  "answer":"That may be screwing with your head.  Give things a few days, then talk to your doctor if it doesn’t settle down."
+  },
+  {
+  "question": "Have you waited a week?",
+  "answer": "Sometimes our perception of life is skewed, and we can’t even tell that we’re not thinking clearly, and there’s no obvious external cause.  It happens.  Keep yourself going for a full week, whatever it takes, and see if you still feel the same way then."
+}
+]
 
-"Do you feel safe?"
-"no": "Phone a friend, crisis line, 911"
-
-"Are you afraid you might hurt yourself or others?"
-"911, crisis line"
 
 
-"Is (your inner asshole) giving you shit again?"
-"tell them to fuck off"
 
-"question": "Are you hydrated?"
-"answer": "  If not, have a glass of water."
+// "Do you feel safe?"
+// "no": "Phone a friend, crisis line, 911"
 
-
-"question": "Have you eaten in the past three hours?"
-"answer": "If not, get some food — something with protein, not just simple carbs.  Perhaps some nuts or hummus?"
+// "Are you afraid you might hurt yourself or others?"
+// "911, crisis line"
 
 
-"question": "Have you showered in the past couple of days?"
-"answer": "If not, take a shower right now."
+// "Is (your inner asshole) giving you shit again?"
+// "tell them to fuck off"
 
-"question": "If daytime: are you dressed?"
-"answer": "If not, put on clean clothes that aren’t pajamas.  Give yourself permission to wear something special, whether it’s a funny t-shirt or a pretty dress."
-
-"question": "If nighttime: are you sleepy and fatigued but resisting going to sleep?"
-"yes": "Put on pajamas, make yourself cozy in bed with a teddy bear and the sound of falling rain, and close your eyes for fifteen minutes — no electronic screens allowed.  If you’re still awake after that, you can get up again; no pressure."
-"no": "next question"
-
-"question": "Have you stretched your legs in the past day?"
-"answer": "If not, do so right now.  If you don’t have the spoons for a run or trip to the gym, just walk around the block, then keep walking as long as you please.  If the weather’s crap, drive to a big box store (e.g. Target) and go on a brisk walk through the aisles you normally skip."
-
-"question": "Have you said something nice to someone in the past day?"
-"answer": "Do so, whether online or in person.  Make it genuine; wait until you see something really wonderful about someone, and tell them about it."
-
-"question": "Have you moved your body to music in the past day?"
-"answer": "If not, do so — jog for the length of an EDM song at your favorite BPM, or just dance around the room for the length of an upbeat song."
-
-"question": "Have you cuddled a living being in the past two days?"
-"answer": "If not, do so.  Don’t be afraid to ask for hugs from friends or friends’ pets.  Most of them will enjoy the cuddles too; you’re not imposing on them."
-
-"question": "Do you feel ineffective?"
-"answer": "Pause right now and get something small completed, whether it’s responding to an e-mail, loading up the dishwasher, or packing your gym bag for your next trip.  Good job!"
-
-"question": "Do you feel unattractive?"
-"answer": "Take a goddamn selfie.  Your friends will remind you how great you look, and you’ll fight society’s restrictions on what beauty can look like."
-
-"question": "Do you feel overwhelmed and/or paralyzed by indecision?"
-"answer": "Give yourself ten minutes to sit back and figure out a game plan for the day.  If a particular decision or problem is still being a roadblock, simply set it aside for now, and pick something else that seems doable.  Right now, the important part is to break through that stasis, even if it means doing something trivial."
-
-"question": "Have you seen a therapist in the past few days?"
-"answer": "If not, hang on until your next therapy visit and talk through things then."
-
-"question": "Have you been over-exerting yourself lately — physically, emotionally, socially, or intellectually?"
-"answer": "That can take a toll that lingers for days. Give yourself a break in that area, whether it’s physical rest, taking time alone, or relaxing with some silly entertainment."
-
-"question": "Have you changed any of your medications in the past couple of weeks, including skipped doses or change in generic prescription brand?"
-"That may be screwing with your head.  Give things a few days, then talk to your doctor if it doesn’t settle down."
-
-"question": "Have you waited a week?"
-"answer": "Sometimes our perception of life is skewed, and we can’t even tell that we’re not thinking clearly, and there’s no obvious external cause.  It happens.  Keep yourself going for a full week, whatever it takes, and see if you still feel the same way then."
-"quotes": [
+export const quotes =  [
 {
   "mrRogers": "When I say it’s you I like, I’m talking about that part of you that knows that life is far more than anything you can ever see or hear or touch. That deep part of you that allows you to stand for those things without which humankind cannot survive. Love that conquers hate, peace that rises triumphant over war, and justice that proves more powerful than greed."
 },
@@ -422,11 +442,10 @@
 {
   "breneBrown": "Joy comes to us in ordinary moments. We risk missing out when we get too busy chasing down the extraordinary."
 }
-“
-It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all, in which
-case you have failed by
-default.”―J.K.Rowling
-“And once the storm is over, you won’t remember how you made it through, how you managed to survive. You won’t even be sure, whether the storm is really over. But one thing is certain. When you come out of the storm, you won’t be the same person who walked in. That’s what this storm’s all about.” ― Haruki Murakami
-
-
 ]
+// “
+// It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all, in which
+// case you have failed by
+// default.”―J.K.Rowling
+// “And once the storm is over, you won’t remember how you made it through, how you managed to survive. You won’t even be sure, whether the storm is really over. But one thing is certain. When you come out of the storm, you won’t be the same person who walked in. That’s what this storm’s all about.” ― Haruki Murakami
+

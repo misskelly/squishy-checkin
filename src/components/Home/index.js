@@ -30,7 +30,7 @@ const Home = () => {
           Need some cuteness rn
         </button>
       </NavLink>
-      <NavLink to="/everythingisawful">
+      <NavLink to="/notok">
         <button
           type="button"
           className="crisis-nav-btn btn"

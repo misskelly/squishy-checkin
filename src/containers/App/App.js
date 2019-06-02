@@ -7,15 +7,15 @@ import { Switch, Route } from 'react-router-dom';
 import ErrorPage from '../../components/ErrorPage';
 import Home from '../../components/Home';
 import HelperPage from '../HelperPage';
+import NotOkPage from '../../components/NotOkPage';
 import { getHelpers } from '../../thunks/getHelpers';
 
 
 export class App extends Component {
-  
   componentDidMount() {
-    this.props.getHelpers();
-    console.log('app props: ', this.props);
-    console.log('app state: ', this.state);
+    getHelpers();
+    // console.log('app props: ', this.props);
+    // console.log('app state: ', this.state);
   }
 
   render() {
@@ -25,8 +25,8 @@ export class App extends Component {
           <Route exact path='/' component={ Home } />
           <Route path='/cats' component={ HelperPage } />
           <Route path='/jokes' component={ HelperPage } />
-          <Route path='/everythingisawful' component={ HelperPage } />
-          <Route path='/error' component={ ErrorPage } /> 
+          <Route path='/notok' component={ NotOkPage } />
+          <Route path='/error' component={ ErrorPage } />
         </Switch>
       </div>
     );
@@ -35,15 +35,15 @@ export class App extends Component {
 
 export const mapStateToProps = state => ({
   isLoading: state.isLoading,
-  error: state.error
+  error: state.error,
 });
 
-export const mapDispatchToProps = (dispatch) => ({
-  getHelpers: () => dispatch(getHelpers())
+export const mapDispatchToProps = dispatch => ({
+  getHelpers: () => dispatch(getHelpers()),
 });
 
-// App.propTypes = {
-
-// }
+App.propTypes = {
+  getHelpers: PropTypes.func,
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

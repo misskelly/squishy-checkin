@@ -13,7 +13,8 @@
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
-    "rfs": "^8.0.4"
+    "rfs": "^8.0.4",
+    "uniqid": "^5.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

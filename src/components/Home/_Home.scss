@@ -1,6 +1,6 @@
 main {
   // @include gradient(hsl(193, 52%, 38%), hsl(202, 49%, 19%), vertical)
-  height: 100%;
+  height: 100vh;
   background: url('assets/spoon.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +40,8 @@ main {
     @include font-size(2rem);
     padding: 1rem;
     font-family: $cursive;
-    background: white;
+    background: rgba(255, 255, 255, 0.651);
+    margin: 0;
   }
 
   .links-wrapper {
