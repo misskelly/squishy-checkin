@@ -1,29 +1,57 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getHelpers } from '../../thunks/getHelpers';
 
 export class HelperPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentView: '',
+    };
+  }
+
+
   componentDidMount() {
+    this.setState({
+      currentView: this.props.match.path.slice(1)
+    });
     // console.log(this.props);
     // console.log(this.state);
   }
 
   render() {
-    const { match, cat, joke } = this.props;
+    const { cat, joke } = this.props;
+    const { currentView } = this.state;
+    const linkText = currentView === 'cats' ? 'ok done with the cuteness' : "I can't take anymore of this";
+    const refreshBtnText = currentView === 'cats' ? 'another cat gif plz' : 'lol ok hit me again';
     return (
       <section className="helper-section">
-        {match.path === '/cats'
+        {currentView === 'cats'
         && (
         <>
           <h3>Here are some cats.</h3>
-          <img src={cat} alt='A silly cat video'/>
+          <img src={cat} alt="A silly cat video" />
         </>
         )
         }
-        {match.path === '/jokes'
-        && <h4>{joke}</h4>
+        { currentView === 'jokes' && 
+          <h4>{joke}</h4>
         }
+        <button
+          type="button"
+          className="new-helper-btn btn"
+          onClick={() => window.location.reload()}
+        >
+          {refreshBtnText}
+        </button>
+        <NavLink
+          className="home-link btn"
+          to="/"
+        >
+          {linkText}
+        </NavLink>
 
       </section>
     );
@@ -41,9 +69,9 @@ const mapDispatchToProps = {
   getHelpers: () => dispatchEvent(getHelpers()),
 };
 
-HelperPage.propTypes =  {
+HelperPage.propTypes = {
   cat: PropTypes.string,
   joke: PropTypes.string,
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(HelperPage);
