@@ -41,5 +41,9 @@ const mapDispatchToProps = {
   getHelpers: () => dispatchEvent(getHelpers()),
 };
 
+HelperPage.propTypes =  {
+  cat: PropTypes.string,
+  joke: PropTypes.string,
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(HelperPage);

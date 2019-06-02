@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "~rfs/scss";
+@import './assets/variables';
+@import './assets/mixins';
+@import './components/ErrorPage/Error';
+@import './components/Home/Home';
+@import './containers/App/App';
+@import './containers/HelperPage/HelperPage';
+
+
+html {
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  font-family: "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: $main-font-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('assets/spoon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-position-y: bottom;
+  @include screen('mobile') {
+    background-position: 10% 40%;
+  }
+  // @include gradient(hsl(202, 49%, 19%), hsl(190, 58%, 47%), vertical);
+  // @include gradient(hsl(202, 49%, 19%), hsl(190, 58%, 47%), vertical);
 }
