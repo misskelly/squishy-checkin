@@ -1,43 +1,57 @@
 main {
   // @include gradient(hsl(193, 52%, 38%), hsl(202, 49%, 19%), vertical)
   height: 100%;
-}
+  background: url('assets/spoon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-position-y: bottom;
 
-.nav {
-  text-align: left;
-}
-
-.main-heading {
-  @include font-size(1rem);
-  font-family: 'Leckerli One', cursive;
-  width: 100%;
-  margin: 1rem;
-  text-shadow: #EDEDED 0 .5px 1px;
-  position: relative;
-}
-
-.check-in {
-  text-transform: uppercase;
-  font-family: $heading-font;
-  display: block;
-  line-height: .8;
-  // letter-spacing: .1rem;
-}
-
-.home-heading {
-  @include font-size(2rem);
-  font-family: $heading-font;
-}
-
-.links-wrapper {
-  display: flex;
-  flex-direction: column;
   @include screen('mobile') {
-    text-align: right;
+    background-position: 10% 40%;
   }
 }
 
-.btn {
-  @include button;
+  .nav {
+    text-align: left;
+  }
 
-}
+  .main-heading {
+    @include font-size(1rem);
+    font-family: $cursive;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    text-shadow: #EDEDED 0 .5px 1px;
+    position: relative;
+    border-bottom: 1px solid white;
+  }
+
+  .check-in {
+    text-transform: uppercase;
+    font-family: $heading-font;
+    display: block;
+    line-height: .8;
+    // letter-spacing: .1rem;
+  }
+
+  .home-heading {
+    @include font-size(2rem);
+    padding: 1rem;
+    font-family: $cursive;
+    background: white;
+  }
+
+  .links-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include screen('mobile') {
+      text-align: right;
+    }
+  }
+
+  .btn {
+    @include button;
+  }

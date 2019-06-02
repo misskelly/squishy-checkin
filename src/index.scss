@@ -18,15 +18,7 @@ body {
   color: $main-font-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('assets/spoon.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left;
-  background-position-y: bottom;
-  @include screen('mobile') {
-    background-position: 10% 40%;
+  
   }
   // @include gradient(hsl(202, 49%, 19%), hsl(190, 58%, 47%), vertical);
   // @include gradient(hsl(202, 49%, 19%), hsl(190, 58%, 47%), vertical);
-}
