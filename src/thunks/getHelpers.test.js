@@ -1,7 +1,9 @@
 import { getHelpers } from './getHelpers';
 import { fetchCatGif } from '../utils/fetchCalls/fetchCatGif';
 import fetchDadJoke from '../utils/fetchCalls/fetchDadJoke';
-import { isLoading, hasErrored, setCat, setJoke } from '../actions';
+import {
+  isLoading, hasErrored, setCat, setJoke
+} from '../actions';
 
 jest.mock('../utils/fetchCalls/fetchCatGif.js');
 jest.mock('../utils/fetchCalls/fetchDadJoke.js');
