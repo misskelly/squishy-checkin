@@ -1,0 +1,44 @@
+.not-ok-section {
+  background: $light-text-color;
+  font-family: $main-font;
+}
+
+.not-ok-heading {
+  font-family: $heading-font;
+  margin: 0 auto 20rem auto;
+  @include font-size(7rem);
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+  padding: 10rem;
+}
+
+.not-alone-text {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: $main-text-color 0 .5px 1px;
+  @include font-size(2rem);
+  margin-bottom: 10rem;
+}
+
+
+.safety-wrapper {
+  @include article-wrapper;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.safety-list {
+  text-align: left;
+  padding-bottom: 2rem;
+  line-height: 2;
+}
+
+.crisis-btn {
+  text-decoration: none;
+  margin: 0 auto;
+  @include button;
+  text-transform: uppercase;
+}
+

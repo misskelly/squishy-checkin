@@ -84,7 +84,7 @@
   &:hover {
     @include btn-hover;
   }
-  
+
   @include screen('mobile') {
     width: 58%;
   }
@@ -97,4 +97,10 @@
   color: $main-text-color;
   font-size: 1.2rem;
   transform: scale(1.1);
+}
+
+@mixin article-wrapper {
+  background: white;
+  border: 6px double $main-text-color;
+  border-radius: 10px
 }

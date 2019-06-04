@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getHelpers } from '../../thunks/getHelpers';
-import bubble from '../../assets/bubble.png';
+
 
 export class HelperPage extends Component {
   constructor(props) {
@@ -15,7 +15,6 @@ export class HelperPage extends Component {
 
 
   componentDidMount() {
-    console.log(bubble)
     this.setState({
       currentView: this.props.match.path.slice(1),
     });

@@ -22,9 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  border: 6px double $main-text-color;
-  border-radius: 10px
+  @include article-wrapper;
 }
 
 .joke-text {
