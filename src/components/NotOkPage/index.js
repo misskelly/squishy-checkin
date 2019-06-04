@@ -2,6 +2,8 @@ import React from 'react';
 import { crisisQuestions } from '../../data';
 import uniqid from 'uniqid';
 import underwater from '../../assets/underwater.jpg';
+import arrow from '../../assets/arrow.svg'
+
 
 export const NotOkPage = () => {
   const questions = crisisQuestions.map((q) => {
@@ -30,6 +32,11 @@ export const NotOkPage = () => {
           You are not alone.
         </span>
       </h1>
+      <img 
+        src={ arrow } 
+        alt="Arrow pointing to safety check questions"
+        className="arrow"
+        />
       <h2 className="safety-q-heading">
         first, a safety check...
       </h2>
