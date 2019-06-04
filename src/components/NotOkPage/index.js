@@ -29,7 +29,7 @@ export const NotOkPage = () => {
         Take 3 deep breaths. 
         <br/>
         <span className="not-alone-text">
-          You are not alone.
+          
         </span>
       </h1>
       <img 

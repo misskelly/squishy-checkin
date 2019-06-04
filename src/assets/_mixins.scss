@@ -68,13 +68,18 @@
   }
 }
 
+@mixin box($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 @mixin button {
   width: 40%;
   font-weight: bold;
   @include font-size(1rem);
   color: white;
   border-radius: 5px;
-  border: none;
+  border: 1px solid $bright-accent-color;
   cursor: pointer;
   background: #286e80;
   transition: .5s;

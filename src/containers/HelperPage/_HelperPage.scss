@@ -25,9 +25,19 @@
   @include article-wrapper;
 }
 
+.cat-heading {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.joke-guy {
+  @include box(3rem, 3rem);
+  padding: 0 1rem 2rem 0;
+}
+
 .joke-text {
   text-align: center;
-  width: 70%;
+  width: 80%;
   font-size: 1.5rem;
 
   @include screen('mobile') {
@@ -39,6 +49,7 @@
 .new-helper-btn {
   font-family: $heading-font;
   font-weight: 600;
+  font-size: 1.2rem;
   @include font-size(1rem);
   width: 60%;
   margin: 1rem auto;
@@ -56,18 +67,20 @@
     transition: all 0.3s ease-in-out;
     transform: scale(1.1);
     border: 2px solid $main-text-color;
-    color: $btn-bkgrnd;
-    background: white;
+    // color: $btn-bkgrnd;
+    background: $light-text-color;
   }
 
   @include screen('mobile') {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
 
-// .home-link {
-//   @extend .new-helper-btn;
-//   // max-width: 60%;
-//   padding: .5rem;
-//   text-decoration: none;
-// }
+.btn-icon {
+  // padding: .1rem;
+  @include box(1.5rem, 2rem);
+  
+  @include screen('mobile') {
+    @include box(1rem, 1rem);
+  }
+}
