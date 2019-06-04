@@ -13,7 +13,7 @@ import { getHelpers } from '../../thunks/getHelpers';
 
 export class App extends Component {
   componentDidMount() {
-    getHelpers();
+    this.props.getHelpers();
     // console.log('app props: ', this.props);
     // console.log('app state: ', this.state);
   }

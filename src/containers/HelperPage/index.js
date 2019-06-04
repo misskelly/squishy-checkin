@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getHelpers } from '../../thunks/getHelpers';
+import bubble from '../../assets/bubble.png';
 
 export class HelperPage extends Component {
   constructor(props) {
@@ -14,8 +15,9 @@ export class HelperPage extends Component {
 
 
   componentDidMount() {
+    console.log(bubble)
     this.setState({
-      currentView: this.props.match.path.slice(1)
+      currentView: this.props.match.path.slice(1),
     });
     // console.log(this.props);
     // console.log(this.state);
@@ -28,31 +30,42 @@ export class HelperPage extends Component {
     const refreshBtnText = currentView === 'cats' ? 'another cat gif plz' : 'lol ok hit me again';
     return (
       <section className="helper-section">
-        {currentView === 'cats'
+        <article className="helper-wrapper">
+
+          {currentView === 'cats'
         && (
-        <>
-          <h3>Here are some cats.</h3>
-          <img src={cat} alt="A silly cat video" />
-        </>
+          <>
+            <h3>Here are some cats.</h3>
+            <img src={cat} alt="A silly cat video" />
+          </>
         )
+      }
+          { currentView === 'jokes' && 
+          ( <div className='joke-wrapper'>
+              <h4 className='joke-text'>{joke}</h4>
+            </div>
+            )
+
         }
-        { currentView === 'jokes' && 
-          <h4>{joke}</h4>
-        }
-        <button
+          <button
           type="button"
-          className="new-helper-btn btn"
+          className="new-helper-btn"
           onClick={() => window.location.reload()}
         >
           {refreshBtnText}
         </button>
-        <NavLink
-          className="home-link btn"
+          <NavLink
+          className="home-link"
           to="/"
         >
+          <button
+            type="button"
+            className="home-btn"
+          >
           {linkText}
+          </button>
         </NavLink>
-
+        </article>
       </section>
     );
   }

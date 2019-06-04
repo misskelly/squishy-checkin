@@ -6,13 +6,17 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
   return (
     <main>
-      <nav className="nav">
+      <header className="header">
         <h1 className="main-heading"><span role='img'>♥</span>Squishy <span className='check-in'>Check-In</span></h1>
-      </nav>
       <h2 className="home-heading">
-        How are your feelings?
+        How are your 
+        <span className="feelings-text">
+          feelings?
+          </span>
       </h2>
-      <div className="links-wrapper">
+      </header>
+      <section className="links-section">
+        <div className="links-wrapper">
 
       <NavLink to="/jokes">
         <button
@@ -38,7 +42,8 @@ const Home = () => {
           Everything is awful and I'm not ok
         </button>
       </NavLink>
-      </div>
+        </div>
+      </section>
 
     </main>
   );

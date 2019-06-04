@@ -1,58 +1,74 @@
 main {
   // @include gradient(hsl(193, 52%, 38%), hsl(202, 49%, 19%), vertical)
   height: 100vh;
+
+}
+
+.header {
+  background: #ffffff;
+  // margin: 1rem;
+  position: relative;
+  z-index: 1;
+  padding: .5rem 0 0 1rem;
+}
+
+.main-heading {
+  text-align: left;
+  @include font-size(1rem);
+  font-family: $cursive;
+  width: 100%;
+  text-shadow: #EDEDED 0 .5px 1px;
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+.check-in {
+  text-transform: uppercase;
+  font-family: $heading-font;
+  display: block;
+  line-height: .8;
+}
+
+.home-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: $main-text-color 0 .5px 1px;
+  @include font-size(3rem);
+  padding: 1rem 0 3rem 0;
+  font-family: $heading-font;
+  margin: 0 1rem;
+}
+
+.feelings-text {
+  @include font-size(7rem);
+  font-weight: bold;
+  display: block;
+  color: $light-text-color;
+}
+
+.links-section {
+  margin-top: -5rem;
+  z-index: -1;
+  height: 100%;
   background: url('assets/spoon.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: left;
   background-position-y: bottom;
-
+  
   @include screen('mobile') {
-    background-position: 10% 40%;
+    background-position: 10% 60%;
+    text-align: right;
   }
 }
 
-  .nav {
-    text-align: left;
-  }
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  margin: 0 1rem 0 0;
+}
 
-  .main-heading {
-    @include font-size(1rem);
-    font-family: $cursive;
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-    text-shadow: #EDEDED 0 .5px 1px;
-    position: relative;
-    border-bottom: 1px solid white;
-  }
-
-  .check-in {
-    text-transform: uppercase;
-    font-family: $heading-font;
-    display: block;
-    line-height: .8;
-    // letter-spacing: .1rem;
-  }
-
-  .home-heading {
-    @include font-size(2rem);
-    padding: 1rem;
-    font-family: $cursive;
-    background: rgba(255, 255, 255, 0.651);
-    margin: 0;
-  }
-
-  .links-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    @include screen('mobile') {
-      text-align: right;
-    }
-  }
-
-  .btn {
-    @include button;
-  }
+.btn {
+  @include button;
+}
