@@ -18,11 +18,19 @@
   text-transform: uppercase;
   font-weight: 300;
   text-shadow: $main-text-color 0 .5px 1px;
+  line-height: 1;
   @include font-size(2rem);
 }
 
+
+.heart {
+  margin-top: 2rem;
+  display: block;
+  @include font-size(5rem);
+}
 .arrow {
   transform: rotate(180deg);
+  height: 30rem;
   filter: invert(0.4) sepia(1) saturate(1.4) hue-rotate(158.4deg) brightness(0.5);
   padding-top: 5rem;
 }
@@ -46,4 +54,38 @@
   margin: 0 auto;
   @include button;
   text-transform: uppercase;
+}
+
+.crisis-q-heading {
+  padding: 5rem 0 15rem 0;
+  font-family: $heading-font;
+  font-weight: bold;
+  margin: 2rem;
+  @include font-size(5rem);
+}
+
+.crisis-q-article {
+  width: 50%;
+  margin: 5rem auto;
+}
+.crisis-q {
+  @include font-size(2rem);
+  font-family: $heading-font;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.crisis-a {
+  @include font-size(1.1rem);
+}
+.q-arrow {
+  height: 15rem;
+  transform: rotate(180deg);
+  filter: invert(0.4) sepia(1) saturate(1.4) hue-rotate(158.4deg) brightness(0.5);
+  margin: 10rem auto;
+}
+
+.underwater-img {
+  width: 80%;
+  max-width: 700px;
 }
