@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getHelpers } from '../../thunks/getHelpers';
 import kitty from '../../assets/kitty.png';
-import next from '../../assets/next.png';
+import arrow from '../../assets/arrow.svg';
 import jokeGuy from '../../assets/joke.png';
 
 
@@ -28,9 +28,9 @@ export class HelperPage extends Component {
   render() {
     const { cat, joke } = this.props;
     const { currentView } = this.state;
-    const linkText = currentView === 'cats' ? 'ok done with the cuteness' : "I can't take anymore of this";
+    const linkText = currentView === 'cats' ? 'ok done with the cuteness' : "I can't take any more of this";
     const refreshBtnText = currentView === 'cats' ? 'another cat gif plz' : 'lol ok hit me again';
-    const refreshIcon = currentView === 'cats' ? kitty : next;
+    // const refreshIcon = currentView === 'cats' ? kitty : next;
 
     return (
       <section className="helper-section">
@@ -51,30 +51,43 @@ export class HelperPage extends Component {
                 <h4 className="joke-text">
                 { joke }
                 </h4>
-              </div>
+            </div>
           )
 
         }
-          <button
+        <div className="btn-wrapper" >
+
+          {/* <button
             type="button"
             className="new-helper-btn"
-            onClick={() => window.location.reload()}
-          >
-            { refreshBtnText }
-            <img src={ refreshIcon } alt="" className="btn-icon" />
-          </button>
-
+            >
+          </button> */}
           <NavLink
             className="home-link"
             to="/"
-          >
+            >
             <button
               type="button"
               className="home-btn"
+              >
+              <img src={ arrow } alt="" className="btn-icon home-icon" />
+            </button>
+              <p className='home-txt'>{ linkText }</p>
+          </NavLink>
+          <NavLink
+            className="refresh-helper"
+            to={`/${currentView}`}
             >
-              { linkText }
+              <p className='refresh-txt'>{ refreshBtnText }</p>
+            <button
+              type="button"
+              className="refresh-btn"
+              onClick={() => window.location.reload()}
+              >
+              <img src={ arrow } alt="" className="btn-icon refresh-icon" />
             </button>
           </NavLink>
+          </div>
         </article>
       </section>
     );
