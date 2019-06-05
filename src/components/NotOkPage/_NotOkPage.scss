@@ -90,3 +90,35 @@
   max-width: 700px;
 }
 
+.crisis-services {
+  width: 100%;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5rem 0;
+  background: $main-text-color;
+  color: white;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $bright-accent-color;
+    @include font-size(1.8rem);
+  }
+  
+}
+.crisis-text {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  width: 70%;
+  margin: 0 auto;
+  margin: 3rem auto;
+}
+
+.help-text {
+  font-family: $heading-font;
+  @include font-size(5rem);
+}
+
+.text,
+.link {
+  padding: 2rem 0;
+}

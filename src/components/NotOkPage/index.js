@@ -88,20 +88,20 @@ to any of these questions,
         <p className="crisis-text">
           When the pressure of life feels like too much to bear, reach out to Colorado Crisis Services.
         </p>
-        <a href="tel:+1844938255"> 1-844-493-TALK (8255)</a>
+        <a className="call" href="tel:+1844938255"> 1-844-493-TALK (8255)</a>
         <p className="toll-text">
           (toll-free)
         </p>
-        <a href="sms:+38255">text TALK to 38255</a>
+        <a className="text" href="sms:+38255">text TALK to 38255</a>
+        <a className="link" href="http://coloradocrisisservices.org/">
+          http://coloradocrisisservices.org/
+        </a>
         <p className="crisis-text">
           Speak to a trained professional about topics like mental health, substance use or emotional support. Services are 100% free of charge. If this is a life threatenening emergency, dial 911.  
         </p>
         <p className="help-text">
           It's ok to ask for the help you need.
         </p>
-        <a href="http://coloradocrisisservices.org/">
-          http://coloradocrisisservices.org/
-        </a>
       </article>
     </section>
   );

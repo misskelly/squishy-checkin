@@ -6,16 +6,15 @@ import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import ErrorPage from '../../components/ErrorPage';
 import Home from '../../components/Home';
-import HelperPage from '../HelperPage';
-import NotOkPage from '../../components/NotOkPage';
+import Helper from '../HelperPage';
+import NotOk from '../../components/NotOkPage';
 import { getHelpers } from '../../thunks/getHelpers';
 
 
 export class App extends Component {
   componentDidMount() {
-    this.props.getHelpers();
-    // console.log('app props: ', this.props);
-    // console.log('app state: ', this.state);
+    const { getHelpers } = this.props;
+    getHelpers();
   }
 
   render() {
@@ -23,9 +22,9 @@ export class App extends Component {
       <div className='App'>
         <Switch>
           <Route exact path='/' component={ Home } />
-          <Route path='/cats' component={ HelperPage } />
-          <Route path='/jokes' component={ HelperPage } />
-          <Route path='/notok' component={ NotOkPage } />
+          <Route path='/cats' component={ Helper } />
+          <Route path='/jokes' component={ Helper } />
+          <Route path='/notok' component={ NotOk } />
           <Route path='/error' component={ ErrorPage } />
         </Switch>
       </div>
@@ -33,10 +32,6 @@ export class App extends Component {
   }
 }
 
-export const mapStateToProps = state => ({
-  isLoading: state.isLoading,
-  error: state.error,
-});
 
 export const mapDispatchToProps = dispatch => ({
   getHelpers: () => dispatch(getHelpers()),
@@ -44,6 +39,6 @@ export const mapDispatchToProps = dispatch => ({
 
 App.propTypes = {
   getHelpers: PropTypes.func,
-}
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
