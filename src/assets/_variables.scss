@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One|Raleway&display=swap');
 
-$heading-font: 'Fira Sans', sans-serif;
-$main-font: 'Raleway', sans-serif;
-$cursive: 'Leckerli One', cursive;
+$heading-font: 'Fira Sans',
+sans-serif;
+$main-font: 'Raleway',
+sans-serif;
+$cursive: 'Leckerli One',
+cursive;
 
 
 //COLORS
 $btn-bkgrnd: hsl(192, 52%, 33%);
-$main-font-color: hsl(202, 49%, 19%);
+$main-text-color: hsl(203, 50%, 19%);
+$light-text-color: hsl(190, 58%, 47%);
+$bright-accent-color: hsl(52, 80%, 77%);
+
+$color1: #286e80;
+$color2: #183648;
+$color3: #2f7f95;
+$color4: #286e80;

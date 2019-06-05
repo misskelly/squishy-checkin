@@ -68,28 +68,44 @@
   }
 }
 
+@mixin box($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 @mixin button {
   width: 40%;
   font-weight: bold;
   @include font-size(1rem);
   color: white;
-  border-radius: 50px;
+  border-radius: 5px;
+  border: 1px solid $bright-accent-color;
   cursor: pointer;
-  background: none;
+  background: #286e80;
   transition: .5s;
   padding: .5rem 1rem;
   margin: 1rem;
 
   &:hover {
-    transition: all 0.3s ease-in-out;
-    background: white;
-    border: none;
-    color: $btn-bkgrnd;
-    font-size: 1.2rem;
-    transform: scale(1.1);
+    @include btn-hover;
   }
 
   @include screen('mobile') {
     width: 58%;
   }
+}
+
+@mixin btn-hover {
+  transition: all 0.3s ease-in-out;
+  background: white;
+  border: 2px solid $bright-accent-color;
+  color: $main-text-color;
+  font-size: 1.2rem;
+  transform: scale(1.1);
+}
+
+@mixin article-wrapper {
+  background: white;
+  border: 6px double $main-text-color;
+  border-radius: 10px
 }

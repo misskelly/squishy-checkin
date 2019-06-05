@@ -225,10 +225,6 @@ export const crisisQuestions = [
   "answer": "Pause right now and get something small completed, whether it’s responding to an e-mail, loading up the dishwasher, or packing your gym bag for your next trip.  Good job!"
   },
   {
-  "question": "Do you feel unattractive?",
-  "answer": "Take a goddamn selfie.  Your friends will remind you how great you look, and you’ll fight society’s restrictions on what beauty can look like."
-  },
-  {
   "question": "Do you feel overwhelmed and/or paralyzed by indecision?",
   "answer": "Give yourself ten minutes to sit back and figure out a game plan for the day.  If a particular decision or problem is still being a roadblock, simply set it aside for now, and pick something else that seems doable.  Right now, the important part is to break through that stasis, even if it means doing something trivial."
   },
