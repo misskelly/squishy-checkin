@@ -18,11 +18,19 @@
   text-transform: uppercase;
   font-weight: 300;
   text-shadow: $main-text-color 0 .5px 1px;
+  line-height: 1;
   @include font-size(2rem);
 }
 
+
+.heart {
+  margin-top: 2rem;
+  display: block;
+  @include font-size(5rem);
+}
 .arrow {
   transform: rotate(180deg);
+  height: 30rem;
   filter: invert(0.4) sepia(1) saturate(1.4) hue-rotate(158.4deg) brightness(0.5);
   padding-top: 5rem;
 }
@@ -46,4 +54,71 @@
   margin: 0 auto;
   @include button;
   text-transform: uppercase;
+}
+
+.crisis-q-heading {
+  padding: 5rem 0 15rem 0;
+  font-family: $heading-font;
+  font-weight: bold;
+  margin: 2rem;
+  @include font-size(5rem);
+}
+
+.crisis-q-article {
+  width: 50%;
+  margin: 5rem auto;
+}
+.crisis-q {
+  @include font-size(2rem);
+  font-family: $heading-font;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.crisis-a {
+  @include font-size(1.1rem);
+}
+.q-arrow {
+  height: 15rem;
+  transform: rotate(180deg);
+  filter: invert(0.4) sepia(1) saturate(1.4) hue-rotate(158.4deg) brightness(0.5);
+  margin: 20rem auto 3rem auto;
+}
+
+.underwater-img {
+  width: 80%;
+  max-width: 700px;
+}
+
+.crisis-services {
+  width: 100%;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 5rem 0;
+  background: $main-text-color;
+  color: white;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $bright-accent-color;
+    @include font-size(1.8rem);
+  }
+  
+}
+.crisis-text {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  width: 70%;
+  margin: 0 auto;
+  margin: 3rem auto;
+}
+
+.help-text {
+  font-family: $heading-font;
+  @include font-size(5rem);
+}
+
+.text,
+.link {
+  padding: 2rem 0;
 }

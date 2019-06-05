@@ -1,15 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import NotOkPage from './index'
+import NotOk from './index';
 
 describe('NotOkPage', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<NotOkPage />)
+    wrapper = shallow(<NotOk />);
   });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 });

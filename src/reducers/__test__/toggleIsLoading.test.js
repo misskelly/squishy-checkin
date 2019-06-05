@@ -9,10 +9,10 @@ describe('toggleIsLoading', () => {
 
   it('should return the initial state', () => {
     const expected = initialState;
-    const result  = toggleIsLoading(initialState, isLoading(false));
+    const result = toggleIsLoading(initialState, isLoading(false));
     expect(result).toEqual(expected);
   });
-  
+
   it('should update state when called', () => {
     const expected = true;
     const result = toggleIsLoading(initialState, isLoading(true));
