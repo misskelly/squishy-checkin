@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ErrorPage from '../../components/ErrorPage';
-import arrow from '../../assets/arrow.svg';
+import arrow from '../../assets/next-arrow.svg';
 import jokeGuy from '../../assets/joke.png';
 
 
