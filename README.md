@@ -31,6 +31,7 @@ Demonstrate understanding of:
 + React
 + React Router
 
+![home-mobile](https://user-images.githubusercontent.com/27245530/58973841-2ea97f80-877e-11e9-8061-be72bd424194.png)
 
 
 ![demo](https://user-images.githubusercontent.com/27245530/58972142-1df70a80-877a-11e9-8751-f2cabbb67918.gif)
